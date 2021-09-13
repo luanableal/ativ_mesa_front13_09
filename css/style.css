@@ -1,0 +1,47 @@
+main img{
+    margin-top: 50px;
+    animation: bolaRolando 5s infinite;
+}
+
+@keyframes bolaRolando{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+     
+    100%{
+        transform: translateX(100%);
+        opacity: 1;
+
+    }
+}
+
+button{
+    margin-top: 20px;
+    transition:all 0.5s ease-in-out;    
+}
+
+button:hover{
+       background-color: aqua;
+    
+}
+
+.icone{
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    animation: trave 3s infinite;
+}
+
+@keyframes trave {
+    from{
+        transform: scale(0.5) rotate( 360deg);
+    }
+    to{
+        transform: scale(1) rotate(0);
+        }
+    }
+
+
+
